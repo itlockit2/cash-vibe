@@ -46,14 +46,14 @@ export async function GET() {
     koreaTime,
     JSON.stringify({
       timestamp,
-      KRW,
-      VND,
+      usdToKrw: KRW,
+      usdToVnd: VND,
     })
   );
 
   return NextResponse.json({
     timestamp,
-    KRW,
-    VND,
+    usdToKrw: KRW,
+    usdToVnd: VND,
   });
 }
